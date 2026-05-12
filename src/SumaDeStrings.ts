@@ -1,11 +1,12 @@
 class SumaDeStrings {
-Sumar(numeros: string) {
-    if (numeros === "") {
-        return 0
+    Sumar(numeros: string) {
+        if (numeros === "") {
+            return 0
+        }
+        else {
+            return parseInt(numeros[0]) + parseInt(numeros[2])
+        }
     }
-    else {
-        return 3
-    }}
 }
 
 export default SumaDeStrings

@@ -10,3 +10,8 @@ test("Suma de strings: '1,2' debe ser 3", () => {
     const suma = new SumaDeStrings()
     expect(suma.Sumar("1,2")).toBe(3)
 })
+
+test("Suma de strings: '4,2' debe ser 6", () => {
+    const suma = new SumaDeStrings()
+    expect(suma.Sumar("4,2")).toBe(6)
+})
