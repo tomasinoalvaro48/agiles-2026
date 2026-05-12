@@ -20,3 +20,9 @@ test("Suma de 1 string: '1' debe ser 1", () => {
   const suma = new SumaDeStrings();
   expect(suma.Sumar('1')).toBe(1);
 });
+
+test("Suma de string: '1,2,3' debe ser 6", () => {
+  const suma = new SumaDeStrings();
+  expect(suma.Sumar('1,2,3')).toBe(6);
+});
+
