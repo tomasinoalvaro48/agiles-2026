@@ -26,3 +26,7 @@ test("Suma de string: '1,2,3' debe ser 6", () => {
   expect(suma.Sumar('1,2,3')).toBe(6);
 });
 
+test("Suma de string: '1,2,3,5,8,13' debe ser 32", () => {
+  const suma = new SumaDeStrings();
+  expect(suma.Sumar('1,2,3,5,8,13')).toBe(32);
+});
