@@ -13,5 +13,13 @@ jobs:
     coverage:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
-            - uses: ArtiomTr/jest-coverage-report-action@v2
+            - name: Setup Pages
+              uses: actions/configure-pages@v4
+              
+            - name: Upload HTML Report Artifact
+              uses: actions/upload-pages-artifact@v3
+              with:
+                path: 'coverage/index.html' # Path to HTML report directory
+
+            - name: Deploy to GitHub Pages
+              uses: actions/deploy-pages@v4
