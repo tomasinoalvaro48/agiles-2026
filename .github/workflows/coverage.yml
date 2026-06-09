@@ -15,7 +15,7 @@ jobs:
         steps:
             - name: Setup Pages
               uses: actions/configure-pages@v4
-              
+
             - name: Upload HTML Report Artifact
               uses: actions/upload-pages-artifact@v3
               with:
